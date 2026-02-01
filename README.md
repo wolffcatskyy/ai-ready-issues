@@ -6,16 +6,51 @@ Most people want to contribute to projects they use but don't know where to star
 
 AI-Ready Issues solve this by giving contributors everything they need — context, requirements, expected behavior — formatted so they can paste it into Claude, ChatGPT, or any AI assistant and get working code back.
 
+## Philosophy
+
+The question isn't "should we use AI in open source?"
+
+The question is: **how do we structure participation so AI becomes a force multiplier for contribution, not a substitute for it?**
+
+Most people want to contribute to projects they use but don't know where to start. The codebase is unfamiliar, the setup is complex, and who has time to learn a whole project just to fix one thing?
+
+But what if maintainers gave you everything you needed — context, requirements, expected behavior — formatted so you could paste it directly into Claude/ChatGPT and get working code back?
+
+That's the idea behind AI-Ready Issues: a standard that lets anyone contribute their AI subscription to a project.
+
+**Here's how it works:**
+
+1. Contributors find an AI-Ready issue
+2. Copy the issue into their AI assistant
+3. Review and test the output — understand every line
+4. Submit it back to GitHub as a pull request
+5. Note that AI was used so maintainers know what to scrutinize
+
+The bottleneck in open source has never been talent. It's context. A skilled developer can fix most bugs in most projects, but they'd need hours just to understand the codebase enough to attempt it. AI-Ready Issues eliminate that barrier.
+
+AI assistants are good at taking structured context and producing working code. Humans are good at reviewing, testing, and understanding intent. This standard combines both strengths — crowdsourced open source, powered by distributed AI compute.
+
+The contributor still needs to:
+- Understand what the code does
+- Test it in their environment
+- Take responsibility for what they submit
+- Disclose that AI was used
+
+The AI just gets them past the blank-page problem.
+
+I've applied this to my own [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import) (147 stars, 10+ AI-ready issues). If you'd like to participate or see it in action, check it out.
+
 ## The Standard
 
 An AI-Ready issue includes:
 
 1. **Context** — what the project does, relevant files, architecture
-2. **Current behavior** — what happens now
+2. **Current behavior** — what happens now (with code references)
 3. **Expected behavior** — what should happen
-4. **Acceptance criteria** — specific, testable requirements
-5. **Constraints** — what not to break
-6. **Prompt template** (optional) — starting point for the AI
+4. **Implementation guide** — file paths, function names, code snippets showing where to make changes
+5. **Acceptance criteria** — specific, testable requirements (checkboxes)
+6. **Constraints** — what not to break
+7. **AI Prompt** — a copy-paste-ready block that feeds the AI everything it needs
 
 ## The Workflow
 
@@ -69,7 +104,7 @@ Maintainer reviews and merges
 ## Templates Included
 
 | File | Purpose |
-|------|---------|
+|------|------------|
 | [templates/CONTRIBUTING.md](templates/CONTRIBUTING.md) | Drop-in CONTRIBUTING.md with AI contribution guidelines |
 | [.github/ISSUE_TEMPLATE/ai-ready-bug.md](.github/ISSUE_TEMPLATE/ai-ready-bug.md) | Bug report formatted for AI consumption |
 | [.github/ISSUE_TEMPLATE/ai-ready-feature.md](.github/ISSUE_TEMPLATE/ai-ready-feature.md) | Feature request formatted for AI consumption |
@@ -79,10 +114,10 @@ Maintainer reviews and merges
 
 ## Projects Using This Standard
 
-- [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import) — 147 stars, 12 open issues
+- [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import) — 147 stars, 10+ AI-ready issues
 - [crowdsec-unifi-bouncer](https://github.com/wolffcatskyy/crowdsec-unifi-bouncer) — 13 stars, 10 open issues
 - [emby-playback-guardian](https://github.com/wolffcatskyy/emby-playback-guardian) — Playback protection for Emby/Jellyfin
-- [wordpress-mcp](https://github.com/wolffcatskyy/wordpress-mcp) — WordPress MCP server for Claude
+- [homeops-mcp](https://github.com/wolffcatskyy/homeops-mcp) — Home infrastructure MCP server
 
 *Using this standard? Open a PR to add your project here.*
 
@@ -91,20 +126,6 @@ Maintainer reviews and merges
 Inspired by [Fedora's 2025 policy on AI-assisted contributions](https://communityblog.fedoraproject.org/council-policy-proposal-policy-on-ai-assisted-contributions/) which established that AI-assisted contributions are welcome when contributors take responsibility for the output.
 
 This standard takes that a step further: instead of just *allowing* AI contributions, we actively *optimize* for them by structuring issues so AI tools can be maximally effective.
-
-## Philosophy
-
-The bottleneck in open source isn't talent — it's context. A skilled developer can fix most bugs in most projects, but they'd need hours just to understand the codebase enough to attempt it.
-
-AI assistants are good at taking structured context and producing working code. Humans are good at reviewing, testing, and understanding intent. AI-Ready Issues combine both strengths.
-
-The contributor still needs to:
-- Understand what the code does
-- Test it in their environment
-- Take responsibility for what they submit
-- Disclose that AI was used
-
-The AI just gets them past the blank-page problem.
 
 ## Contributing
 

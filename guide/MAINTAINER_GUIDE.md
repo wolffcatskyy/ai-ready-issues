@@ -2,6 +2,31 @@
 
 This guide helps maintainers write issues that contributors (with or without AI) can actually solve.
 
+## When to Use (and Not Use) This Standard
+
+The AI-ready format has a cost: writing a good issue takes 10-20 minutes of structured thinking. That investment only pays off when the issue is the right size.
+
+### Write an AI-ready issue when:
+
+- **The fix requires codebase knowledge you have but the contributor doesn't** — you know exactly which file and function to change, but explaining it unlocks someone who'd otherwise never attempt it
+- **You'd accept a PR but nobody's picking it up** — the barrier to entry is too high, not the work itself
+- **The change is self-contained** — 1-3 files, clear boundaries, testable in isolation
+- **The issue writing is an investment** — 15 minutes now saves someone else hours of onboarding
+
+### Just fix it yourself when:
+
+- **You can solve it faster than you can describe it** — a two-line fix doesn't need a structured prompt. Writing the context, implementation guide, and acceptance criteria would take 10x longer than the fix
+- **The context needed to explain it IS the work** — sometimes articulating the problem to a stranger is harder than solving it. That's not an AI-ready issue. That's just your job
+- **It requires deep architectural judgment** — if the "right" answer depends on tradeoffs only you can evaluate, no amount of template will help
+
+### The sweet spot:
+
+**A single, well-bounded change that requires real codebase knowledge to implement but not to understand.**
+
+Think: adding a new API endpoint behind a clear interface, implementing a feature where the design is settled but the contributor needs to know where things live, fixing a bug where you know the root cause but the fix touches code a newcomer wouldn't find on their own.
+
+---
+
 ## Why Structure Matters
 
 The #1 reason people don't contribute to open source isn't skill — it's context. They don't know:

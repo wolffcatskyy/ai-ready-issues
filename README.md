@@ -70,6 +70,20 @@ Contributor submits PR with AI disclosure
 Maintainer reviews and merges
 ```
 
+## The Hard Part: Right-Sizing Issues
+
+The AI-ready format has a cost. Writing a good issue takes 10-20 minutes of structured thinking — context, implementation guide, acceptance criteria, AI prompt. That investment only pays off when the issue is the right size.
+
+**Too small** — If you can fix it faster than you can describe it, just fix it. A two-line change doesn't need a structured template. The overhead of writing the issue exceeds the value of crowdsourcing the fix.
+
+**Too large** — If the change touches 10 files across 3 subsystems, no amount of context will make it AI-friendly. The model loses coherence, the contributor can't meaningfully review the output, and the PR becomes un-reviewable.
+
+**The sweet spot** — A single, well-bounded change that requires real codebase knowledge to implement but not to understand. Adding a new endpoint behind a clear interface. Fixing a bug where you know the root cause but the fix touches code a newcomer wouldn't find. Implementing a feature where the design is settled but the contributor needs to know where things live.
+
+The maintainer's judgment is what makes this work. You know your codebase — you know which changes are self-contained enough for someone to pick up cold. That curation is the standard's real value.
+
+See the [Maintainer Guide](guide/MAINTAINER_GUIDE.md) for detailed guidance on when to use (and not use) this standard.
+
 ## What This Is
 
 - Lowering the barrier to open source participation
@@ -82,6 +96,7 @@ Maintainer reviews and merges
 - Dumping untested AI garbage
 - Submitting code you don't understand
 - Replacing real developers
+- Writing issues for things you could fix faster yourself
 
 ## Quick Start
 

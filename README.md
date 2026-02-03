@@ -1,5 +1,10 @@
 # AI-Ready Issues
 
+---
+**Note:** This project was developed with and is supported exclusively by AI. There is no human support — issues and PRs are triaged and responded to by AI agents. If AI-assisted software isn't for you, no hard feelings — but you might want to reconsider, since so is most of the software you already use.
+
+---
+
 A standard for writing open source issues that AI assistants can help solve.
 
 Most people want to contribute to projects they use but don't know where to start. The codebase is unfamiliar, the setup is complex, and who has time to learn a whole project just to fix one thing?

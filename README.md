@@ -43,7 +43,7 @@ The contributor still needs to:
 
 The AI just gets them past the blank-page problem.
 
-I've applied this to my own [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import) (147 stars, 10+ AI-ready issues). If you'd like to participate or see it in action, check it out.
+I've applied this to my own [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import). If you'd like to participate or see it in action, check it out.
 
 ## The Standard
 
@@ -134,8 +134,9 @@ See the [Maintainer Guide](guide/MAINTAINER_GUIDE.md) for detailed guidance on w
 
 ## Projects Using This Standard
 
-- [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import) — 147 stars, 10+ AI-ready issues
-- [crowdsec-unifi-bouncer](https://github.com/wolffcatskyy/crowdsec-unifi-bouncer) — 13 stars, 10 open issues
+- [crowdsec-blocklist-import](https://github.com/wolffcatskyy/crowdsec-blocklist-import) — Import 120k+ IPs from 36 threat feeds into CrowdSec
+- [crowdsec-unifi-bouncer](https://github.com/wolffcatskyy/crowdsec-unifi-bouncer) — Native CrowdSec bouncer for UniFi OS
+- [crowdsec-unifi-parser](https://github.com/wolffcatskyy/crowdsec-unifi-parser) — CrowdSec-parseable firewall logs from UniFi
 - [emby-playback-guardian](https://github.com/wolffcatskyy/emby-playback-guardian) — Playback protection for Emby/Jellyfin
 - [homeops-mcp](https://github.com/wolffcatskyy/homeops-mcp) — Home infrastructure MCP server
 
